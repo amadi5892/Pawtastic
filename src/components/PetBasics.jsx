@@ -9,7 +9,7 @@ return(
         <h5>Pet Basics</h5>
     </div>
     <div className="form">
-        <h2>Yay, we love dogs! Give us the basics about your pup.</h2>
+        <h2 className="header">Yay, we love dogs! Give us the basics about your pup.</h2>
 
         <div className="form-input">
             <div className="info2">
