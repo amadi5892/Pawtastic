@@ -34,16 +34,19 @@ h2 {
   width: 50%;
   margin-left: 200px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #494A62;
 }
 
 label {
   font-family: Helvetica, Arial, sans-serif;
+  color: #9995A1;
 }
 
 h5 {
   font-family: Helvetica, Arial, sans-serif;
   color: #EADDDC;
 }
+
 
 .form-input {
   border: solid burlywood;
@@ -100,8 +103,8 @@ h5 {
 }
 
 .toggle_radio label {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #494A62;
   opacity: .9;
   z-index: 0;
   display: block;
