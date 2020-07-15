@@ -6,6 +6,7 @@ function PetBasics() {
 return(
 <div className="container">
     <div className="nav-bar">
+        <h4>Pawtastic</h4>
         <h5>Pet Basics</h5>
     </div>
     <div className="form">
