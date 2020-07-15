@@ -26,94 +26,112 @@
   grid-row: 1 / 2;
 }
 
-/* The switch - the box around the slider */
-.switch-toggle {
-  border: solid green;
+.form-input {
+  border: solid burlywood;
+  margin-top: 100px;
+}
+
+.info2 {
+  border: solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.input-sec2 {
+  border: solid yellow;
+  display: flex;
+  flex-direction: column;
+  margin-left: -220px;
+}
+
+.input-sec {
+  border: solid yellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 25px 0;
+}
+
+.toggle_radio {
   position: relative;
-  display: inline-block;
-  width: 250px;
-  height: 34px;
-}
-
-/* Hide default HTML radio buttons */
-.switch-toggle input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The Slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: '';
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  trasnstion: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196f3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-}
-
-input:checked + slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* .toggle-btn {
-  padding: 10px 30px;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  outline: none;
+  background: blue;
+  opacity: .7;
+  margin: 4px auto;
+  /* overflow: hidden; */
+  padding: 0 !important;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
   position: relative;
-}
-
-#btn {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 110px;
-  height: 100%;
-  background: linear-gradient(to right, #ff105f, #ffad06);
-  border-radius: 30px;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-#btn:before {
-  position: absolute;
   height: 26px;
-  width: 20px;
-  left: 4px;
-  bottom: 4px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  width: 424px;
 }
 
-#btn {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-} */
+.toggle_radio > * {
+  float: left;
+}
+
+.toggle_radio input[type=radio] {
+  display: none;
+}
+
+.toggle_radio label {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  opacity: .9;
+  z-index: 0;
+  display: block;
+  width: 100px;
+  height: 20px;
+  margin-left: 3px;
+  margin-top: 10px;
+  -webkit-border-radius: 50px;
+  -mox-border-radius: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+  text-align: center;
+}
+
+.toggle_option_slider {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 3px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+#first_toggle:checked ~ .toggle_option_slider {
+  background:yellow;
+  opacity: .3;
+  left: 3px;
+}
+
+#second_toggle:checked ~ .toggle_option_slider {
+  background: yellow;
+  opacity: .3;
+  left: 109px;
+}
+
+#third_toggle:checked ~ .toggle_option_slider {
+  background: yellow;
+  opacity: .3;
+  left: 215px;
+}
+
+#fourth_toggle:checked ~ .toggle_option_slider {
+  background: yellow;
+  opacity: .3;
+  left: 321px;
+}
