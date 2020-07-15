@@ -6,7 +6,11 @@ function PetBasics() {
 return(
 <div className="container">
     <div className="nav-bar">
-        <h4>Pawtastic</h4>
+        <div className="logo">
+            <iframe className="fas fa-paw circle-icon"></iframe>
+            <h4>Pawtastic</h4>
+        </div>
+
         <h5>Pet Basics</h5>
     </div>
     <div className="form">
@@ -18,7 +22,7 @@ return(
                     <label>Name</label>
                     <input type="text"></input>
                 </div>
-
+                
             </div>
 
 
@@ -65,10 +69,18 @@ return(
 
                 <input type="radio" className="toggle_option" id="fourth_toggle" name="toggle_option"></input>
 
-                <label for="first_toggle"><p>0-25 lbs</p></label>
-                <label for="second_toggle"><p>25-50 lbs</p></label>
-                <label for="third_toggle"><p>50-75 lbs</p></label>
-                <label for="fourth_toggle"><p>100 lbs</p></label>
+                <label for="first_toggle">
+                    <p>0-25 lbs</p>
+                </label>
+                <label for="second_toggle">
+                    <p>25-50 lbs</p>
+                </label>
+                <label for="third_toggle">
+                    <p>50-75 lbs</p>
+                </label>
+                <label for="fourth_toggle">
+                    <p>100 lbs</p>
+                </label>
                 <div className="toggle_option_slider"></div>
             </div>
         </div>

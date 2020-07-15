@@ -53,13 +53,38 @@ h4 {
 h5 {
   font-family: Helvetica, Arial, sans-serif;
   color: #EADDDC;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
+.logo {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.nav-bar .circle-icon {
+  color: black;
+  background: #E8E8E8;
+  width: 8px;
+  height: 8px;
+  padding: 20px;
+  border-radius: 50%;
+  text-align: center;
+}
 
 .form-input {
   border: solid burlywood;
-  margin-top: 100px;
+  margin-top: 75px;
+}
+
+.form-input input {
+  background-color: #E8E8E8;
+  border: none;
+  height: 35px;
+}
+
+.form-input label {
+  font-size: 8pt;
 }
 
 .info2 {
@@ -70,6 +95,7 @@ h5 {
   width: 500px;
   margin-left: 120px;
 }
+
 
 .input-sec2 {
   border: solid yellow;
@@ -90,7 +116,7 @@ h5 {
 
 .toggle_radio {
   position: relative;
-  background: blue;
+  background: #E8E8E8;
   opacity: .7;
   margin: 4px auto;
   /* overflow: hidden; */
@@ -101,6 +127,14 @@ h5 {
   position: relative;
   height: 26px;
   width: 424px;
+}
+
+.wrapper:before {
+  content: 'Weight';
+  font-family: Helvetica, Arial, sasn-serif;
+  font-size: 8pt;
+  color: #9995A1;
+  margin-left: 142px;
 }
 
 .toggle_radio > * {
@@ -145,25 +179,21 @@ h5 {
 }
 
 #first_toggle:checked ~ .toggle_option_slider {
-  background:yellow;
-  opacity: .3;
+  background:#E7C5C4;
   left: 3px;
 }
 
 #second_toggle:checked ~ .toggle_option_slider {
-  background: yellow;
-  opacity: .3;
+  background: #E7C5C4;
   left: 109px;
 }
 
 #third_toggle:checked ~ .toggle_option_slider {
-  background: yellow;
-  opacity: .3;
+  background: #E7C5C4;
   left: 215px;
 }
 
 #fourth_toggle:checked ~ .toggle_option_slider {
-  background: yellow;
-  opacity: .3;
+  background: #E7C5C4;
   left: 321px;
 }
